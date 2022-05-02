@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Item.belongsTo(models.Company);
     }
   }
   Item.init(
@@ -67,7 +68,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       isActive: {
         type: DataTypes.BOOLEAN,
-        defaultValue: "active",
+        defaultValue: "Active",
       },
       CompanyId: DataTypes.INTEGER,
     },
