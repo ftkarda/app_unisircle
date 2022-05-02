@@ -1,0 +1,52 @@
+"use strict";
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable("Transactions", {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER,
+      },
+      noTable: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      noOrder: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      ItemId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Items",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
+      },
+      UserId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Users",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+      },
+    });
+  },
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("Transactions");
+  },
+};
