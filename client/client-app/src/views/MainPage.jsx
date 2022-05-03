@@ -48,7 +48,7 @@ export default function MainPage() {
                     isActive ? activeClassName : unactiveClassName
                   }
                 >
-                  <i className="fa fa-tags pr-0 md:pr-3"></i>
+                  <i className="fa fa-building pr-0 md:pr-3"></i>
                   <span className="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">
                     Companies
                   </span>
