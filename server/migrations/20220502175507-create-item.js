@@ -27,9 +27,6 @@ module.exports = {
       status: {
         type: Sequelize.STRING
       },
-      isActive: {
-        type: Sequelize.BOOLEAN
-      },
       CompanyId:  {
         allowNull: false,
         type: Sequelize.INTEGER,

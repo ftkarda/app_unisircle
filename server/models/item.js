@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Item.belongsTo(models.Company);
+      Item.hasMany(models.Transaction);
     }
   }
   Item.init(
@@ -39,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
         validate: {
           notEmpty: {
@@ -65,10 +66,6 @@ module.exports = (sequelize, DataTypes) => {
       status: {
         type: DataTypes.STRING,
         defaultValue: "Ready",
-      },
-      isActive: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: true,
       },
       CompanyId: DataTypes.INTEGER,
     },
