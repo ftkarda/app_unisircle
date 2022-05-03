@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-// import categoryReducer from "./categoryReducer";
-// import productReducer from "./productReducer";
+import companyReducer from "./companyReducer";
+import itemReducer from "./itemReducer";
 import { SET_ISLOADING, SET_ISERROR } from "../actions/actionType";
 
 const initialState = {
@@ -20,8 +20,8 @@ const indexReducer = (state = initialState, action) => {
 };
 
 const rootReducer = combineReducers({
-  // categoryReducer,
-  // productReducer,
+  companyReducer,
+  itemReducer,
   indexReducer,
 });
 

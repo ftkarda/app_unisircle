@@ -31,7 +31,9 @@ export default function MainPage() {
               <li className="mr-3 flex-1">
                 <NavLink
                   to="/"
-                  className={({ isActive }) => (isActive ? activeClassName : unactiveClassName)}
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : unactiveClassName
+                  }
                 >
                   <i className="fas fa-home pr-0 md:pr-3"></i>
                   <span className="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">
@@ -41,26 +43,18 @@ export default function MainPage() {
               </li>
               <li className="mr-3 flex-1">
                 <NavLink
-                  to="categories"
-                  className={({ isActive }) => (isActive ? activeClassName : unactiveClassName)}
+                  to="companies"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : unactiveClassName
+                  }
                 >
                   <i className="fa fa-tags pr-0 md:pr-3"></i>
                   <span className="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">
-                    Categories
+                    Companies
                   </span>
                 </NavLink>
               </li>
-              <li className="mr-3 flex-1">
-                <NavLink
-                  to="register"
-                  className={({ isActive }) => (isActive ? activeClassName : unactiveClassName)}
-                >
-                  <i className="fas fa-user-plus pr-0 md:pr-3 "></i>
-                  <span className="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">
-                    Register Admin
-                  </span>
-                </NavLink>
-              </li>
+
               <li className="mr-3 flex-1">
                 <a
                   href="#"
