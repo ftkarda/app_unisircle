@@ -18,12 +18,12 @@ class CompanyController {
 
   static async companies(req, res, next) {
     try {
-      const company = await Company.findAll({
+      const companies = await Company.findAll({
         attributes: {
           exclude: ["createdAt", "updatedAt"],
         },
       });
-      res.status(200).json(company);
+      res.status(200).json(companies);
     } catch (error) {
       next(error);
     }

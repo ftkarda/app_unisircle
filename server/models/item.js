@@ -68,7 +68,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       isActive: {
         type: DataTypes.BOOLEAN,
-        defaultValue: "Active",
+        defaultValue: true,
       },
       CompanyId: DataTypes.INTEGER,
     },
