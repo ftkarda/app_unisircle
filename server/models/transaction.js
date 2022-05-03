@@ -9,6 +9,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Transaction.belongsTo(models.Item)
+      Transaction.belongsTo(models.User)
     }
   }
   Transaction.init(
@@ -36,6 +38,10 @@ module.exports = (sequelize, DataTypes) => {
             msg: "No Order is required",
           },
         },
+      },
+      isActive: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: true,
       },
       ItemId: DataTypes.INTEGER,
       UserId: DataTypes.INTEGER,

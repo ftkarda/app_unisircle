@@ -1,0 +1,17 @@
+[
+    {
+        "name": "McDonald's",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/200px-McDonald%27s_Golden_Arches.svg.png",
+        "description": "McDonald's Corporation adalah perusahaan makanan cepat saji Amerika, yang didirikan pada tahun 1940 sebagai restoran yang dioperasikan oleh Richard dan Maurice McDonald, di San Bernardino, California, Amerika Serikat. "
+    },
+    {
+        "name": "J.CO Donuts",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/J.CO_logo_circle.svg/175px-J.CO_logo_circle.svg.png",
+        "description": "J.CO Donuts & Coffee is an Indonesian cafe restaurant chain that specializes in donuts, coffee and frozen yogurt. The company is owned and managed by Johnny Andrean Group."
+    },
+    {
+        "name": "Starbucks",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/125px-Starbucks_Corporation_Logo_2011.svg.png",
+        "description": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It is the world's largest coffeehouse chain. As of November 2021, the company had 33,833 stores in 80 countries, 15,444 of which were located in the United States."
+    }
+]
