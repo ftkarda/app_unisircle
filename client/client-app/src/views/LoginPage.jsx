@@ -35,7 +35,8 @@ export default function LoginPage() {
       })
       .then((data) => {
         Swal.fire("Login success.", "", "success");
-        localStorage.setItem("access_token", data.accessToken);
+        localStorage.setItem("access_token", data.access_token);
+        localStorage.setItem("role", data.role);
         navigate("/");
       })
       .catch((err) => {

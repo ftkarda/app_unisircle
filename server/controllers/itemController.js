@@ -1,4 +1,4 @@
-const { Item } = require("../models");
+const { Item, Company } = require("../models");
 
 class ItemController {
   static async create(req, res, next) {
@@ -19,7 +19,9 @@ class ItemController {
 
   static async items(req, res, next) {
     try {
-      const items = await Item.findAll();
+      const items = await Item.findAll({
+        include: Company,
+      });
       res.status(200).json(items);
     } catch (error) {
       next(error);
